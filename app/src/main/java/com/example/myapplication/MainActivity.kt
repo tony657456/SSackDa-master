@@ -9,7 +9,7 @@ import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
 import com.kakao.sdk.talk.TalkApiClient
 
-
+// spring이랑 연결... 해보자구~~
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
