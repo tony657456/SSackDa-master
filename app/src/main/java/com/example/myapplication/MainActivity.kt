@@ -9,7 +9,7 @@ import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
 import com.kakao.sdk.talk.TalkApiClient
 
-
+// DB 연결 해야한다... spring boot를 사용할건데 어려울 거 같다.
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
