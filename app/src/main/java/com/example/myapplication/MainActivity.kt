@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         // 전화 걸기 탭
         binding.calltab.setOnClickListener{
-            val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:01012345678"))
+            val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
             startActivity(call)
         }
         // 카카오톡 상담하기 탭
@@ -33,9 +33,9 @@ class MainActivity : AppCompatActivity() {
             KakaoCustomTabsClient.openWithDefault(this, url)
         }
         // 카카오톡 채널추가 하기 탭
-        binding.goodtip.setOnClickListener {
-            val url = TalkApiClient.instance.addChannelUrl("_xgHcfT")
-            KakaoCustomTabsClient.openWithDefault(this, url)
+        binding.talktab.setOnClickListener {
+            val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("http://bz150422a.ilogin.biz/"))
+            startActivity(homepage)
         }
     }
 }
