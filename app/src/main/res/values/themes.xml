@@ -5,7 +5,7 @@
         <!-- Primary brand color. -->
         <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/green</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
