@@ -38,6 +38,9 @@
                 android:contentDescription="@string/contentDescription"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 검색 버튼 들어갈 자리-->
+
         </androidx.constraintlayout.widget.ConstraintLayout>
         <!-- 상단바 END -->
 
@@ -63,7 +66,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/parent_constraintLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/topBar">
@@ -71,14 +74,14 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <GridLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:columnCount="5"
                         android:orientation="horizontal"
                         android:rowCount="50"
@@ -97,8 +100,7 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/standard"
-                            android:textColor="#546E7A" />
+                            android:text="@string/standard" />
 
                         <TextView
                             android:layout_columnWeight="0.5"
@@ -107,7 +109,7 @@
                             android:text="@string/unit" />
 
                         <TextView
-                            android:layout_columnWeight="1"
+                            android:layout_columnWeight="2"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
                             android:text="가격" />
@@ -118,29 +120,1379 @@
                         <!-- 석고보드 단가 정보-->
                         <!-- android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서
                          정렬이 가능하다.-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_rowSpan="10"-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:layout_gravity="fill"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/regular_gypsum" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="3,100" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,180" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2500" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,350" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,440" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2600" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,530" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2650" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,620" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="12.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,190" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,580" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보 END&ndash;&gt;-->
+                        <!--                    </GridLayout>-->
+                        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                    android:id="@+id/constraintLayout2"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">-->
+
+                        <!--                    <GridLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:columnCount="5"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:rowCount="100"-->
+                        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보&ndash;&gt;-->
+                        <!--                        &lt;!&ndash; android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서-->
+                        <!--                         정렬이 가능하다.&ndash;&gt;-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_rowSpan="10"-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:layout_gravity="fill"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center_horizontal|center_vertical"-->
+                        <!--                            android:text="@string/arson_gypsum" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,180" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2500" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,350" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,440" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2600" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,530" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2650" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,620" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="12.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,190" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,580" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보 END&ndash;&gt;-->
+                        <!--                    </GridLayout>-->
+                        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                    android:id="@+id/constraintLayout3"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">-->
+
+                        <!--                    <GridLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:columnCount="5"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:rowCount="100"-->
+                        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보&ndash;&gt;-->
+                        <!--                        &lt;!&ndash; android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서-->
+                        <!--                         정렬이 가능하다.&ndash;&gt;-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_rowSpan="10"-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:layout_gravity="fill"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center_horizontal|center_vertical"-->
+                        <!--                            android:text="@string/waterproof_gypsum" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="3,100" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,180" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2500" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,350" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,440" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2600" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,530" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2650" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,620" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="12.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,190" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,580" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보 END&ndash;&gt;-->
+                        <!--                    </GridLayout>-->
+                        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                    android:id="@+id/constraintLayout4"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">-->
+
+                        <!--                    <GridLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:columnCount="5"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:rowCount="100"-->
+                        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보&ndash;&gt;-->
+                        <!--                        &lt;!&ndash; android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서-->
+                        <!--                         정렬이 가능하다.&ndash;&gt;-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_rowSpan="10"-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:layout_gravity="fill"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center_horizontal|center_vertical"-->
+                        <!--                            android:text="@string/regular_gypsum" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="3,100" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,180" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2500" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,350" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,440" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2600" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,530" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2650" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,620" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="12.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,190" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,580" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보 END&ndash;&gt;-->
+                        <!--                    </GridLayout>-->
+                        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                    android:id="@+id/constraintLayout5"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">-->
+
+                        <!--                    <GridLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:columnCount="5"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:rowCount="100"-->
+                        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보&ndash;&gt;-->
+                        <!--                        &lt;!&ndash; android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서-->
+                        <!--                         정렬이 가능하다.&ndash;&gt;-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_rowSpan="10"-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:layout_gravity="fill"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center_horizontal|center_vertical"-->
+                        <!--                            android:text="@string/regular_gypsum" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="3,100" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,180" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2500" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,350" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,440" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2600" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,530" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2650" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,620" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,700" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="12.5Tx900x1800" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="4,190" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2400" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,580" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="0"-->
+                        <!--                            android:gravity="center" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="9.5Tx900x2550" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/EA" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_columnWeight="1"-->
+                        <!--                            android:background="@drawable/border_bottom_right_layout"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="5,950" />-->
+                        <!--                        &lt;!&ndash; 석고보드 단가 정보 END&ndash;&gt;-->
+
+                        <!-- 대표 품목 단가표 -->
                         <TextView
-                            android:layout_rowSpan="10"
                             android:layout_columnWeight="1"
-                            android:layout_gravity="fill"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/regular_gypsum" />
+                            android:text="DMC 금속" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x1800" />
+                            android:text="600 * 600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="3,700" />
+
+                        <TextView android:layout_columnWeight="0" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="SMC 열경화성수지" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="600 * 600" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="3,600" />
+
+                        <TextView
+                            android:layout_columnWeight="0"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="AL담파(롤 코팅)" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="600 * 600" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="6,100" />
+
+                        <TextView
+                            android:layout_columnWeight="0"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="스판드럴" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="100S" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="M" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="1,770" />
+
+                        <TextView
+                            android:layout_columnWeight="0"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="욕실돔(평형 / 돔형)" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="1350 * 1850" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="28,100" />
+
+                        <TextView
+                            android:layout_columnWeight="0"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="일반 석고 보드" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="9.5T * 900 * 1800" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
                             android:text="3,100" />
 
@@ -152,41 +1504,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
+                            android:text="집텍스" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="9.5T * 300 * 600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,180" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="BOX" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2500" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,350" />
+                            android:text="13,100" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -196,41 +1532,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="마이톤 T바용" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="15T * 603 * 603" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,440" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="BOX" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2600" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,530" />
+                            android:text="23,800" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -240,41 +1560,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2650" />
+                            android:text="그라스 울(크린매트)" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="50T * 24K * " />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,620" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="롤" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2700" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,700" />
+                            android:text="39,100" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -284,41 +1588,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="12.5Tx900x1800" />
+                            android:text="이보드 압출 13T" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="900 * 2400(3 * 8)" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,190" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="장" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,580" />
+                            android:text="12,600" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -328,68 +1616,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="엠바 시스템" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="m²" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="5,950" />
-                        <!-- 석고보드 단가 정보 END-->
-                    </GridLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-                    <GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:columnCount="5"
-                        android:orientation="horizontal"
-                        android:rowCount="100"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <!-- 석고보드 단가 정보-->
-                        <!-- android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서
-                         정렬이 가능하다.-->
-                        <TextView
-                            android:layout_rowSpan="10"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/arson_gypsum" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x1800" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,950" />
+                            android:text="4,600" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -399,19 +1643,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
+                            android:text="클립바 시스템" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="m²" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="4,180" />
+                            android:text="4,200" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -421,19 +1670,23 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2500" />
+                            android:text="T바 시스템" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="m²" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,350" />
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -443,41 +1696,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="스터드" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="KS" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,440" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="65형" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2600" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,530" />
+                            android:text="1,440" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -487,41 +1724,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2650" />
+                            android:text="런너" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="KS" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,620" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="65형" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2700" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,700" />
+                            android:text="1,250" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -531,41 +1752,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="12.5Tx900x1800" />
+                            android:text="데코타일" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="450 * 450 3T" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,190" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="3.24(m²)" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,580" />
+                            android:text="20,100" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -575,68 +1780,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="아이소 핑크 20T" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="900 * 1800" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="5,950" />
-                        <!-- 석고보드 단가 정보 END-->
-                    </GridLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-                    <GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:columnCount="5"
-                        android:orientation="horizontal"
-                        android:rowCount="100"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <!-- 석고보드 단가 정보-->
-                        <!-- android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서
-                         정렬이 가능하다.-->
-                        <TextView
-                            android:layout_rowSpan="10"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/waterproof_gypsum" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x1800" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="3,100" />
+                            android:text="4,740" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -646,41 +1808,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
+                            android:text="소송건조 다루끼" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="30 * 30 * 3600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,180" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2500" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,350" />
+                            android:text="22,200" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -690,41 +1836,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="구조재" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="38 * 89 * 3600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,440" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2600" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,530" />
+                            android:text="11,100" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -734,41 +1864,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2650" />
+                            android:text="합판 알비자" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="12T * 1220 * 2440" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,620" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2700" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,700" />
+                            android:text="9,500" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -778,41 +1892,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="12.5Tx900x1800" />
+                            android:text="합판 내수" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="12T * 1220 * 2440" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,190" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,580" />
+                            android:text="28,400" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -822,68 +1920,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="MDF" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="9T * 1220 * 2440" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="5,950" />
-                        <!-- 석고보드 단가 정보 END-->
-                    </GridLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
-
-                    <GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:columnCount="5"
-                        android:orientation="horizontal"
-                        android:rowCount="100"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <!-- 석고보드 단가 정보-->
-                        <!-- android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서
-                         정렬이 가능하다.-->
-                        <TextView
-                            android:layout_rowSpan="10"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/regular_gypsum" />
+                            android:text="EA" />
 
                         <TextView
                             android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
+                            android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x1800" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="3,100" />
+                            android:text="11,300" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -893,19 +1948,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
+                            android:text="방부목" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="38 * 140 * * 3600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,180" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -915,19 +1975,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2500" />
+                            android:text="방부 데크" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="21 * 120 * 3600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,350" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -937,19 +2002,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2550" />
+                            android:text="집성판 멀바우" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="18T * 1220 * 2440" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,440" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -959,19 +2029,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2600" />
+                            android:text="삼목 루바" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="10 * 113 * 3600" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,530" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -981,19 +2056,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2650" />
+                            android:text="멀바우 후로링" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="10T * 70 * 900" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,620" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -1003,19 +2083,25 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2700" />
+                            android:text="P.F보드(준불연)" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="100T" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,700" />
+                            android:text="m²" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:text="21,000" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -1025,19 +2111,24 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="12.5Tx900x1800" />
+                            android:text="경질 우레탄 준불연" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="30 ~ 200T" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="4,190" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -1047,299 +2138,41 @@
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="9.5Tx900x2400" />
+                            android:text="ABS 도어" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="@string/EA" />
+                            android:text="900 * 2100" />
 
                         <TextView
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
-                            android:text="5,580" />
+                            android:text="EA" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
                             android:gravity="center" />
 
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2550" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,950" />
-                        <!-- 석고보드 단가 정보 END-->
-                    </GridLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
-
-                    <GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:columnCount="5"
-                        android:orientation="horizontal"
-                        android:rowCount="100"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <!-- 석고보드 단가 정보-->
-                        <!-- android:layout_gravity="fill"을 사용하면 합쳐진 셀 안에서
-                         정렬이 가능하다.-->
-                        <TextView
-                            android:layout_rowSpan="10"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/regular_gypsum" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x1800" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="3,100" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2400" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,180" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2500" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,350" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2550" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,440" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2600" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,530" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2650" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,620" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2700" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,700" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="12.5Tx900x1800" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="4,190" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2400" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,580" />
-
-                        <TextView
-                            android:layout_columnWeight="0"
-                            android:gravity="center" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5Tx900x2550" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="@string/EA" />
-
-                        <TextView
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="5,950" />
-                        <!-- 석고보드 단가 정보 END-->
                     </GridLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
         <!-- android:baselineAligned="false"은 view 일렬로 세워졌을 때
              기준선을 정하여 view가 이탈하는 일이 없도록 해주는 것이다.-->
+        <!-- 하단 탭 레이아웃 -->
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="@color/white"
             android:baselineAligned="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -1350,7 +2183,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/bottom_hometap"
+                android:background="@drawable/calltab"
                 android:orientation="horizontal" />
 
             <LinearLayout
@@ -1358,7 +2191,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/bottom_goodtip"
+                android:background="@drawable/kakaotalk_sharing_btn_medium"
                 android:orientation="horizontal" />
 
             <LinearLayout
@@ -1366,23 +2199,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/bottom_store"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:id="@+id/bookmark"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bottom_bookmark"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:id="@+id/goodtip"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bottom_talk"
+                android:background="@drawable/ssackda_logo"
                 android:orientation="horizontal" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
