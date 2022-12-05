@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -54,19 +56,42 @@ class MainActivity : AppCompatActivity() {
         call.enqueue(object : Callback<List<Product>> {
             override fun onResponse(call: Call<List<Product>>, response: Response<List<Product>>) {
                 if (response.isSuccessful()) {
-                    Log.d(
-                        "RESPONSE: ",
-                        (response.body()?.get(0)?.product_name
-                            ?: toString()) + ", " + (response.body()
-                            ?.get(0)?.unit ?: toString())
-                    )
+                    // 아이디 30개 가져옴
+                    var size = response.body()?.size
+                    for (i in 1..size!!) {
+                        // getIdentifier 사용해서 for문으로 응답받은 값만큼 반복
+                        var product_id = resources.getIdentifier(
+                            "product_name$i",
+                            "id",
+                            "com.example.myapplication"
+                        )
+                        var standard_id = resources.getIdentifier(
+                            "standard_name$i",
+                            "id",
+                            "com.example.myapplication"
+                        )
+                        var unit_id = resources.getIdentifier(
+                            "unit_name$i",
+                            "id",
+                            "com.example.myapplication"
+                        )
+                        var price_id = resources.getIdentifier(
+                            "price_name$i",
+                            "id",
+                            "com.example.myapplication"
+                        )
+
+                        // 담아온 id 내용으로 id를 찾아서 각 TextView에다가 response값을 넣어줌
+                        val product_name = findViewById<TextView>(product_id)
+                        val standard_name = findViewById<TextView>(standard_id)
+                        val unit_name = findViewById<TextView>(unit_id)
+                        val price_name = findViewById<TextView>(price_id)
+                        product_name.text = response.body()?.get(i - 1)?.product_name
+                        standard_name.text = response.body()?.get(i - 1)?.standard
+                        unit_name.text = response.body()?.get(i - 1)?.unit
+                        price_name.text = response.body()?.get(i - 1)?.price
+                    }
                 } else Log.d("RESPONSE", "FAILSE")
-                for (product in response.body()!!){
-                    product.product_name
-                }
-                for (count in response.body()!!){
-                    
-                }
             }
 
             override fun onFailure(call: Call<List<Product>>, t: Throwable) {

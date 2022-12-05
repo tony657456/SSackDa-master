@@ -120,3 +120,65 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+## RetrofitBulider 
+```kotlin
+package com.example.myapplication.dto
+
+import com.example.myapplication.api.API
+import com.google.gson.GsonBuilder
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
+
+// Gson은 정형화 된 Json 형식만 허용할 정도로 엄격하다. 그래서
+// var gson = GsonBuilder().setLenient().create() 코드를 사용해
+// 조금 더 자유로운 parse가 가능하도록 하였다.
+object RetrofitBulider {
+    var api : API
+    var gson = GsonBuilder().setLenient().create()
+    init {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://192.168.0.13:8000/")
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
+        api = retrofit.create(API::class.java)
+    }
+}
+```
+## 서버랑 통신하기 위한 API
+```kotlin
+package com.example.myapplication.api
+
+import com.example.myapplication.domain.User
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.http.Body
+import retrofit2.http.POST
+
+// 서버 db에 있는 모든 데이터를 가져오려면 [[name, password]]의 List 형식으로 받아와야 하는데
+interface API {
+    @POST("android")
+    fun getLoginResponse(@Body user: User) : Call<List<User>>
+}
+```
+## response 받는 코드
+```kotlin
+    fun Login(user: User) {
+        val call = RetrofitBulider.api.getLoginResponse(user)
+
+        call.enqueue(object : Callback<List<User>> {
+            override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+                if (response.isSuccessful()) Log.d("RESPONSE: ",
+                    (response.body()?.get(0)?.password ?: toString()) + ", " + (response.body()
+                        ?.get(0)?.name ?: toString())
+                )
+                else Log.d("RESPONSE", "FAILSE")
+
+            }
+
+            override fun onFailure(call: Call<List<User>>, t: Throwable) {
+                Log.d("CONNECTION FAILURE: ", t.localizedMessage)
+            }
+        })
+    }
+```
