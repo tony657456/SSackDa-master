@@ -103,13 +103,13 @@
                             android:text="@string/standard" />
 
                         <TextView
-                            android:layout_columnWeight="0.5"
+                            android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:text="@string/unit" />
 
                         <TextView
-                            android:layout_columnWeight="2"
+                            android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
                             android:text="가격" />
@@ -125,22 +125,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name1"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="600 * 600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name1"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name1"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="3,700" />
+                            android:gravity="center" />
 
                         <TextView android:layout_columnWeight="0" />
 
@@ -151,22 +151,23 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name2"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="600 * 600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name2"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name2"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="3,600" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -179,22 +180,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name3"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="600 * 600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name3"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name3"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="6,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -207,22 +208,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name4"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="100S" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name4"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="M" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name4"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="1,770" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -235,22 +236,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name5"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="1350 * 1850" />
+                            android:gravity="center"/>
 
                         <TextView
+                            android:id="@+id/unit_name5"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name5"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="28,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -263,22 +264,23 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name6"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5T * 900 * 1800" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name6"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name6"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="3,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -291,22 +293,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name7"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9.5T * 300 * 600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name7"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="BOX" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name7"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="13,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -319,22 +321,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name8"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="15T * 603 * 603" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name8"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="BOX" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name8"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="23,800" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -347,22 +349,23 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name9"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="50T * 24K * " />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name9"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="롤" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name9"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="39,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -375,22 +378,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name10"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="900 * 2400(3 * 8)" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name10"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="장" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name10"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="12,600" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -403,21 +406,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name11"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name11"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="m²" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name11"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="4,600" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -430,21 +434,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name12"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name12"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="m²" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name12"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="4,200" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -457,17 +462,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name13"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name13"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="m²" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name13"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -483,22 +490,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name14"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="KS" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name14"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="65형" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name14"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="1,440" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -511,22 +518,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name15"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="KS" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name15"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="65형" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name15"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="1,250" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -539,22 +546,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name16"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="450 * 450 3T" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name16"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="3.24(m²)" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name16"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="20,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -567,22 +574,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name17"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="900 * 1800" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name17"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name17"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="4,740" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -595,22 +602,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name18"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="30 * 30 * 3600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name18"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name18"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="22,200" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -623,22 +630,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name19"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="38 * 89 * 3600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name19"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name19"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="11,100" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -651,22 +658,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name20"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="12T * 1220 * 2440" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name20"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name20"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="9,500" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -679,22 +686,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name21"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="12T * 1220 * 2440" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name21"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name21"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="28,400" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -707,22 +714,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name22"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="9T * 1220 * 2440" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name22"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name22"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="11,300" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -735,18 +742,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name23"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="38 * 140 * * 3600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name23"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name23"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -762,18 +770,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name24"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="21 * 120 * 3600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name24"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name24"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -789,18 +798,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name25"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="18T * 1220 * 2440" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name25"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name25"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -816,18 +826,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name26"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="10 * 113 * 3600" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name26"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name26"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -843,18 +854,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name27"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="10T * 70 * 900" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name27"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name27"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -871,22 +883,22 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name28"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="100T" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name28"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="m²" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name28"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:text="21,000" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_columnWeight="0"
@@ -899,18 +911,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name29"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="30 ~ 200T" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name29"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name29"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -926,18 +939,19 @@
                             android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/standard_name30"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="900 * 2100" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/unit_name30"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:text="EA" />
+                            android:gravity="center" />
 
                         <TextView
+                            android:id="@+id/price_name30"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center" />
@@ -968,7 +982,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/calltab"
+                android:background="@drawable/bottom_hometap"
                 android:orientation="horizontal" />
 
             <LinearLayout

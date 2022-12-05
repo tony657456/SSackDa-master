@@ -161,3 +161,27 @@ interface API {
     fun getLoginResponse(@Body user: User) : Call<List<User>>
 }
 ```
+<<<<<<< HEAD
+=======
+## response 받는 코드
+```kotlin
+    fun Login(user: User) {
+        val call = RetrofitBulider.api.getLoginResponse(user)
+
+        call.enqueue(object : Callback<List<User>> {
+            override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+                if (response.isSuccessful()) Log.d("RESPONSE: ",
+                    (response.body()?.get(0)?.password ?: toString()) + ", " + (response.body()
+                        ?.get(0)?.name ?: toString())
+                )
+                else Log.d("RESPONSE", "FAILSE")
+
+            }
+
+            override fun onFailure(call: Call<List<User>>, t: Throwable) {
+                Log.d("CONNECTION FAILURE: ", t.localizedMessage)
+            }
+        })
+    }
+```
+>>>>>>> master2
