@@ -15,4 +15,7 @@
     <string name="arson_gypsum">방화 석고보드</string>
     <string name="waterproof_gypsum">방수 석고보드</string>
     <string name="EA">EA</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+        com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+    </string>
 </resources>
