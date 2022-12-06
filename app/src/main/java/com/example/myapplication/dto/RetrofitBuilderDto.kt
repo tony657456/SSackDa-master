@@ -9,7 +9,7 @@ object RetrofitBuilderDto {
     var gson = GsonBuilder().setLenient().create()
     init {
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.13:8000/")
+            .baseUrl("http://192.168.0.22:8000/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
         api = retrofit.create(API::class.java)
