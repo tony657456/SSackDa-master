@@ -18,8 +18,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-// DB 연결 해야한다... spring boot를 사용할건데 어려울 거 같다.
-// spring이랑 연결... 해보자구~~
+// Spring boot랑 연결을 해서 데이터를 받아온다.
+// 카카오톡 채팅을 사용하기 위해 카카오 API를 사용하는 중인데
+// 이 부분은 카카오톡 개발자 사이트에서 문서를 보거나 구글링을 통해 해결했다.
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -51,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         product_data(product)
     }
 
+    // request를 하고 response를 받아오는 코드인데 건축자재 데이터를 List 형태로 받아오기 때문에
+    // getIdentifier라는 함수를 이용해서 아이디를 받아온 다음 각 표 셀 안에다가 건축자재 데이터를 넣어주었다.
     fun product_data(product: Product) {
         val call = RetrofitBuilderDto.api.getProductResponse(product)
         call.enqueue(object : Callback<List<Product>> {
