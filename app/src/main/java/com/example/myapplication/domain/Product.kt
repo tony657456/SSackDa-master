@@ -1,5 +1,6 @@
 package com.example.myapplication.domain
 
+// 서버와 일치시킨 필드
 class Product {
     var id: Int? = null
         get() {

@@ -5,7 +5,11 @@
     <!-- 인터넷 사용 권한 설정 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <!-- android:usesCleartextTraffic="true"는 안드로이드에서는 기본적으로 http 통신을 막아놓았다.
+    그래서 이 코드를 써줘야지 http 코드를 사용할 수 있다.-->
+    <!-- android:host="kakaolink"
+         android:scheme="kakaodeee36d8ab760c95e888056a58302a5d"는 카카오톡 API를 사용하기 위한
+         native 키이다. 개발자 사이트에서 로그인을 한 후 발급 받을 수 있다.-->
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"

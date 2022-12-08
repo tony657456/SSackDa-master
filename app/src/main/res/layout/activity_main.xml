@@ -63,914 +63,914 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/topBar">
 
-                    <!-- 처음에는 그냥 scrollview를 사용했는데 coordinatorlayout를 사용해서 애니메이션
-                    효과를 주려면 NestedScrollView, RecyleView를 사용해야 했다.-->
-                    <androidx.core.widget.NestedScrollView
+            <!-- 처음에는 그냥 scrollview를 사용했는데 coordinatorlayout를 사용해서 애니메이션
+            효과를 주려면 NestedScrollView, RecyleView를 사용해야 했다.-->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="pin">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/parent_constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:layout_collapseMode="pin">
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/parent_constraintLayout"
+                        <GridLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:columnCount="5"
+                            android:orientation="horizontal"
+                            android:rowCount="50"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="parent">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:id="@+id/constraintLayout"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent">
-
-                                <GridLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:columnCount="5"
-                                    android:orientation="horizontal"
-                                    android:rowCount="50"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent">
-
-                                    <!-- 상단 카데고리 목록 -->
-                                    <TextView
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center"
-                                        android:text="@string/product_name" />
-
-                                    <TextView
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center"
-                                        android:text="@string/standard" />
-
-                                    <TextView
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center"
-                                        android:text="@string/unit" />
-
-                                    <TextView
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center"
-                                        android:text="가격" />
-
-                                    <TextView android:layout_columnWeight="0" />
-
-                                    <!-- 상단 카데고리 목록 END-->
-
-                                    <!-- 대표 품목 단가표 -->
-                                    <TextView
-                                        android:id="@+id/product_name1"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name1"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name1"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name1"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView android:layout_columnWeight="0" />
-
-                                    <TextView
-                                        android:id="@+id/product_name2"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name2"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name2"
-                                        android:layout_height="wrap_content"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name2"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name3"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name3"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name3"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name3"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name4"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name4"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name4"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name4"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name5"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name5"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name5"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name5"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name6"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name6"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name6"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name6"
-                                        android:layout_height="wrap_content"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name7"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name7"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name7"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name7"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name8"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name8"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name8"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name8"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name9"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name9"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name9"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name9"
-                                        android:layout_height="wrap_content"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name10"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name10"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name10"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name10"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name11"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name11"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name11"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name11"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name12"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name12"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name12"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name12"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name13"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name13"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name13"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name13"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name14"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name14"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name14"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name14"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name15"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name15"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name15"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name15"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name16"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name16"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name16"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name16"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name17"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name17"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name17"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name17"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name18"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name18"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name18"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name18"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name19"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name19"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name19"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name19"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name20"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name20"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name20"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name20"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name21"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name21"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name21"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name21"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name22"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name22"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name22"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name22"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name23"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name23"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name23"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name23"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name24"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name24"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name24"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name24"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name25"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name25"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name25"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name25"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name26"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name26"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name26"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name26"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name27"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name27"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name27"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name27"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name28"
-                                        android:layout_height="wrap_content"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name28"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name28"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name28"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name29"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name29"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name29"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name29"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/product_name30"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/standard_name30"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/unit_name30"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_bottom_right_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:id="@+id/price_name30"
-                                        android:layout_columnWeight="1"
-                                        android:background="@drawable/border_only_bottom_layout"
-                                        android:gravity="center" />
-
-                                    <TextView
-                                        android:layout_columnWeight="0"
-                                        android:gravity="center" />
-                                </GridLayout>
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.core.widget.NestedScrollView>
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- 상단 카데고리 목록 -->
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="@string/product_name" />
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="@string/standard" />
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="@string/unit" />
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="가격" />
+
+                            <TextView android:layout_columnWeight="0" />
+
+                            <!-- 상단 카데고리 목록 END-->
+
+                            <!-- 대표 품목 단가표 -->
+                            <TextView
+                                android:id="@+id/product_name1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView android:layout_columnWeight="0" />
+
+                            <TextView
+                                android:id="@+id/product_name2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name2"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name6"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name8"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name8"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name8"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name8"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name9"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name9"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name9"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name9"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name10"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name10"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name10"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name10"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name11"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name11"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name11"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name11"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name12"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name12"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name12"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name12"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name13"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name13"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name13"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name13"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name14"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name14"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name14"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name14"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name15"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name15"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name15"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name15"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name16"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name16"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name16"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name16"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name17"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name17"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name17"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name17"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name18"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name18"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name18"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name18"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name19"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name19"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name19"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name19"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name20"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name20"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name20"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name20"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name21"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name21"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name21"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name21"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name22"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name22"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name22"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name22"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name23"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name23"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name23"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name23"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name24"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name24"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name24"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name24"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name25"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name25"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name25"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name25"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name26"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name26"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name26"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name26"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name27"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name27"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name27"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name27"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name28"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name28"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name28"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name28"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name29"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name29"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name29"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name29"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/product_name30"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/standard_name30"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/unit_name30"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/price_name30"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_columnWeight="0"
+                                android:gravity="center" />
+                        </GridLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
 
             <!-- android:baselineAligned="false"은 view 일렬로 세워졌을 때
                  기준선을 정하여 view가 이탈하는 일이 없도록 해주는 것이다.-->
