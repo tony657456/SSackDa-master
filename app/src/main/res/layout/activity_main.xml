@@ -13,6 +13,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
+            android:background="@color/white"
             android:layout_height="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +44,19 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <!-- 상단바 END -->
 
+        <!-- 상단 제품 탭 리사이클러 뷰 Start -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topBar"
+            tools:listitem="@layout/recyclerview_item" />
+        <!-- 상단 제품 탭 리사이클러 뷰 End -->
+
         <!-- 상단바 아래에 선 -->
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -50,24 +64,25 @@
             android:layout_height="1dp"
             android:background="@color/gray"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/topBar"
-            app:layout_constraintTop_toBottomOf="@+id/topBar"></LinearLayout>
+            app:layout_constraintBottom_toBottomOf="@+id/rv_profile"></LinearLayout>
         <!-- 상단바 아래에 선 END -->
 
         <!-- coordinatorlayout을 사용하면 다양한 view를 이용해 애니메이션 효과를 사용할 수 있다.-->
         <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="130dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topBar">
+            app:layout_constraintTop_toBottomOf="@+id/rv_profile">
 
             <!-- 처음에는 그냥 scrollview를 사용했는데 coordinatorlayout를 사용해서 애니메이션
             효과를 주려면 NestedScrollView, RecyleView를 사용해야 했다.-->
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="56dp"
                 app:layout_collapseMode="pin">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -943,25 +958,24 @@
                             <TextView
                                 android:id="@+id/product_name30"
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/border_only_right_layout"
                                 android:gravity="center" />
 
                             <TextView
                                 android:id="@+id/standard_name30"
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/border_only_right_layout"
                                 android:gravity="center" />
 
                             <TextView
                                 android:id="@+id/unit_name30"
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/border_only_right_layout"
                                 android:gravity="center" />
 
                             <TextView
                                 android:id="@+id/price_name30"
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center" />
 
                             <TextView
@@ -976,10 +990,10 @@
                  기준선을 정하여 view가 이탈하는 일이 없도록 해주는 것이다.-->
             <!-- 하단 탭 레이아웃 -->
             <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior">
+                android:layout_gravity="bottom">
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
@@ -996,7 +1010,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/bottom_hometap"
+                        android:background="@drawable/calltab"
                         android:orientation="horizontal" />
 
                     <LinearLayout

@@ -4,16 +4,18 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.domain.Product
 import com.example.myapplication.dto.RetrofitBuilderDto
+import com.example.myapplication.recycleadapter.ProfileAdapter
+import com.example.myapplication.recycleadapter.ProfileData
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
 import com.kakao.sdk.talk.TalkApiClient
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     var product = Product()
+    lateinit var profileAdapter: ProfileAdapter
+    val datas = mutableListOf<ProfileData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +54,25 @@ class MainActivity : AppCompatActivity() {
             startActivity(homepage)
         }
         product_data(product)
+        initRecycler()
+    }
+
+    private fun initRecycler() {
+        profileAdapter = ProfileAdapter(this)
+        rv_profile.adapter = profileAdapter
+
+
+        datas.apply {
+            add(ProfileData(img = R.drawable.circle_shape))
+            add(ProfileData(img = R.drawable.circle_shape))
+            add(ProfileData(img = R.drawable.circle_shape))
+            add(ProfileData(img = R.drawable.circle_shape))
+            add(ProfileData(img = R.drawable.circle_shape))
+
+            profileAdapter.datas = datas
+            profileAdapter.notifyDataSetChanged()
+
+        }
     }
 
     // request를 하고 response를 받아오는 코드인데 건축자재 데이터를 List 형태로 받아오기 때문에
