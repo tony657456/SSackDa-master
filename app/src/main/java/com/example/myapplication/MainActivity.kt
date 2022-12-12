@@ -54,26 +54,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(homepage)
         }
         product_data(product)
-        initRecycler()
     }
 
-    private fun initRecycler() {
-        profileAdapter = ProfileAdapter(this)
-        rv_profile.adapter = profileAdapter
-
-
-        datas.apply {
-            add(ProfileData(img = R.drawable.circle_shape))
-            add(ProfileData(img = R.drawable.circle_shape))
-            add(ProfileData(img = R.drawable.circle_shape))
-            add(ProfileData(img = R.drawable.circle_shape))
-            add(ProfileData(img = R.drawable.circle_shape))
-
-            profileAdapter.datas = datas
-            profileAdapter.notifyDataSetChanged()
-
-        }
-    }
 
     // request를 하고 response를 받아오는 코드인데 건축자재 데이터를 List 형태로 받아오기 때문에
     // getIdentifier라는 함수를 이용해서 아이디를 받아온 다음 각 표 셀 안에다가 건축자재 데이터를 넣어주었다.

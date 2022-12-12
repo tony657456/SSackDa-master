@@ -1,15 +1,15 @@
 package com.example.myapplication.recycleadapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.myapplication.MainActivity
 import com.example.myapplication.R
 
-class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
+class ProfileAdapter(private val context: MainActivity) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
 
     var datas = mutableListOf<ProfileData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
