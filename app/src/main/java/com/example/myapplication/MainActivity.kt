@@ -38,6 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.home.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
             val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
@@ -94,10 +98,14 @@ class MainActivity : AppCompatActivity() {
                         val standard_name = findViewById<TextView>(standard_id)
                         val unit_name = findViewById<TextView>(unit_id)
                         val price_name = findViewById<TextView>(price_id)
+
                         product_name.text = response.body()?.get(i - 1)?.product_name
                         standard_name.text = response.body()?.get(i - 1)?.standard
                         unit_name.text = response.body()?.get(i - 1)?.unit
                         price_name.text = response.body()?.get(i - 1)?.price
+
+                        Log.d("name: ", product_name.text.toString())
+                        Log.d("name: ", standard_name.text.toString())
                     }
                 } else Log.d("RESPONSE", "FAILSE")
             }
