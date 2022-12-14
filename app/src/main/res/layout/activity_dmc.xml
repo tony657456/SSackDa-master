@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".content.DmcActivity">
+
+        <!-- 상단바 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/ssackda_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/baseline_search_black_18"
+                android:contentDescription="@string/contentDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- 검색 버튼 들어갈 자리-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- 상단바 END -->
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/tabMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topBar">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topBar">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/home"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/circle_shape"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/dmc_metal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/circle_shape"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/smc"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/circle_shape"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/circle_shape" />
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/circle_shape" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!-- 상단바 아래에 선 -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tabMode"></LinearLayout>
+        <!-- 상단바 아래에 선 END -->
+
+        <!-- coordinatorlayout을 사용하면 다양한 view를 이용해 애니메이션 효과를 사용할 수 있다.-->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="151dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <!-- 처음에는 그냥 scrollview를 사용했는데 coordinatorlayout를 사용해서 애니메이션
+            효과를 주려면 NestedScrollView, RecyleView를 사용해야 했다.-->
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="57dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/parent_constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnCount="4"
+                            android:rowCount="30">
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="품명"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="규격"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="단위"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="가격"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_name1"
+                                android:layout_rowSpan="3"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill_vertical"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="DMC 금속\n(2급 준불연)"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="600*600"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price1"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="3,700"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="450*450"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price2"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="2,500"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="300*600"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price3"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="2,300"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_name2"
+                                android:layout_rowSpan="4"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill_vertical"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="DMC 금속\n(1급 물연)"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="600*600"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price4"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="4,100"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="450*450"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price5"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="2,800"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="300*600"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price6"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="2,600"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_standard7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="육각(600*693)"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_unit7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_bottom_right_layout"
+                                android:gravity="center"
+                                android:text="EA"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/product_price7"
+                                android:layout_columnWeight="1"
+                                android:background="@drawable/border_only_bottom_layout"
+                                android:gravity="center"
+                                android:text="4,500"
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
+                        </GridLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!-- android:baselineAligned="false"은 view 일렬로 세워졌을 때
+     기준선을 정하여 view가 이탈하는 일이 없도록 해주는 것이다.-->
+        <!-- 하단 탭 레이아웃 -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/calltab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/calltab"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/kakatab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kakaotalk_sharing_btn_medium"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/talktab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ssackda_logo"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,7 +1,7 @@
 package com.example.myapplication.domain
 
 // 서버와 일치시킨 필드
-class Product {
+class RepresentProduct {
     var id: Int? = null
         get() {
             return field
