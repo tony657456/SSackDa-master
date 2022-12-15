@@ -77,7 +77,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="25dp"
-                        android:background="@drawable/circle_shape"
+                        android:background="@drawable/tab"
                         android:orientation="horizontal" />
 
                     <LinearLayout
@@ -85,7 +85,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="25dp"
-                        android:background="@drawable/circle_shape"
+                        android:background="@drawable/tab"
                         android:orientation="horizontal" />
 
                     <LinearLayout
@@ -93,20 +93,20 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="25dp"
-                        android:background="@drawable/circle_shape"
+                        android:background="@drawable/tab"
                         android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="25dp"
-                        android:background="@drawable/circle_shape" />
+                        android:background="@drawable/tab" />
 
                     <LinearLayout
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="25dp"
-                        android:background="@drawable/circle_shape" />
+                        android:background="@drawable/tab" />
                 </LinearLayout>
             </HorizontalScrollView>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -164,7 +164,7 @@
 
                             <TextView
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/ssackda"
                                 android:gravity="center"
                                 android:padding="3dp"
                                 android:text="품명"
@@ -172,7 +172,7 @@
 
                             <TextView
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/ssackda"
                                 android:gravity="center"
                                 android:padding="3dp"
                                 android:text="규격"
@@ -180,7 +180,7 @@
 
                             <TextView
                                 android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
+                                android:background="@drawable/ssackda"
                                 android:gravity="center"
                                 android:padding="3dp"
                                 android:text="단위"
@@ -202,7 +202,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="DMC 금속\n(2급 준불연)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -213,7 +212,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="600*600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -225,7 +223,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -236,7 +233,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="3,700"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -245,7 +241,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="SMC 열경화성 수지"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -254,7 +249,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="600*600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -263,7 +257,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -272,7 +265,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="3,600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -281,7 +273,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="AL담파(롤 코팅)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -290,7 +281,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="600*600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -299,7 +289,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -308,7 +298,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="6,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -317,7 +306,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="스판드럴"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -326,7 +314,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="100S"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -335,7 +322,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="M"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -344,7 +330,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="1,770"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -353,7 +338,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="욕실돔(평형/돔형)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -362,7 +346,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="1350*1850"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -371,7 +354,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -380,7 +363,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="28,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -389,7 +371,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="욕실돔(사이드)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -398,7 +379,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="1000*1850"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -407,7 +387,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -416,7 +396,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="30,700"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -425,7 +404,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="일반 석고 보드"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -434,7 +412,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="9.5T*900*1800"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -443,7 +420,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -452,7 +429,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="3,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -461,7 +437,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="집텍스"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -470,7 +445,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="9.5T*300*600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -479,7 +453,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="BOX"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -488,7 +462,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="13,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -497,7 +470,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="마이톤 T바용"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -506,7 +478,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="15T*603*603"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -515,7 +486,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="BOX"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -524,7 +495,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="23,800"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -535,7 +505,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="그라스 울\n(크린매트)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -546,7 +515,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="50T*24K\n*450*1M"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -557,7 +525,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="롤"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -568,7 +535,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="39,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -577,7 +543,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="이보드 압출 13T"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -586,7 +551,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="900*2400(3*8)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -595,7 +559,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="장"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -604,7 +567,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="12,600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -613,7 +575,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="엠바 시스템"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -630,7 +591,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="㎡"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -639,7 +599,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="4,600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -648,7 +607,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="클립바 시스템"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -665,7 +623,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="㎡"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -674,7 +631,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="4,200"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -683,7 +639,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="T바 시스템"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -700,7 +655,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="㎡"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -717,7 +671,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="스터드"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -726,7 +679,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="KS"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -735,7 +687,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="65형"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -744,7 +695,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="1,440"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -753,7 +703,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="런너"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -762,16 +711,15 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="KS"
                                 android:textSize="15dp" />
 
                             <TextView
                                 android:id="@+id/product_unit16"
+                                android:layout_height="wrap_content"
                                 android:layout_columnWeight="1"
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="65형"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -780,7 +728,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="1,250"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -789,7 +736,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="데코타일"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -798,7 +744,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="450*450 3T"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -807,7 +752,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="3.24(㎡)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -816,7 +760,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="20,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -825,7 +768,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="아이소 핑크 20T"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -834,7 +776,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="900*1800"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -843,7 +784,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -852,7 +793,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="4,740"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -863,7 +803,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="소송건조 다루끼\n12자(A급)"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -874,7 +813,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="30*30*3600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -885,7 +823,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -896,7 +834,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="22,200"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -905,7 +842,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="구조재"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -914,7 +850,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="38*89*3600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -923,7 +858,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -932,7 +867,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="11,100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -941,7 +875,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="합판 알비자"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -950,7 +883,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="12T*1220*2440"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -959,7 +891,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -968,7 +900,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="9,500"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -977,7 +908,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="합판 내수"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -986,7 +916,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="12T*1220*2440"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -995,7 +924,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1004,7 +933,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="28,400"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1013,7 +941,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="MDF"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1022,7 +949,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="9T*1220*2440"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1031,7 +957,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1040,7 +966,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="11,300"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1049,7 +974,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="방부목"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1058,7 +982,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="38*140*3600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1067,7 +990,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1084,7 +1007,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="방부 데크"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1093,7 +1015,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="21*120*3600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1102,7 +1023,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1119,7 +1040,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="집성판 멀바우"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1128,7 +1048,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="18T*1220*2440"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1137,7 +1056,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1154,7 +1073,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="삼목 루바"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1163,7 +1081,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="10*113*3600"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1172,7 +1089,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1189,7 +1106,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="멀바우 후로링"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1198,7 +1114,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="10T*70*900"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1207,7 +1122,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1224,7 +1139,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="P.F보드 준불연"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1233,7 +1147,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="100T"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1242,7 +1155,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="㎡"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1251,7 +1163,6 @@
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="21,000"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1260,7 +1171,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="경질 우레탄 준불연"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1269,7 +1179,6 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="30~200T"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1278,7 +1187,7 @@
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1295,7 +1204,6 @@
                                 android:background="@drawable/border_only_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="ABS 도어"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1304,7 +1212,6 @@
                                 android:background="@drawable/border_only_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="900*2100"
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1313,7 +1220,7 @@
                                 android:background="@drawable/border_only_right_layout"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="EA"
+                                
                                 android:textSize="15dp" />
 
                             <TextView
@@ -1353,7 +1260,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/calltab"
+                    android:background="@drawable/call"
                     android:orientation="horizontal" />
 
                 <LinearLayout
@@ -1361,7 +1268,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/kakaotalk_sharing_btn_medium"
+                    android:background="@drawable/home"
                     android:orientation="horizontal" />
 
                 <LinearLayout
@@ -1369,7 +1276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/ssackda_logo"
+                    android:background="@drawable/kakao"
                     android:orientation="horizontal" />
             </LinearLayout>
         </com.google.android.material.bottomnavigation.BottomNavigationView>

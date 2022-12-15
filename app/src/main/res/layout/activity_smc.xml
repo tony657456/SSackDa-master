@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DmcActivity">
+        tools:context=".SmcActivity">
 
         <!-- 상단바 -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -196,12 +196,12 @@
 
                             <TextView
                                 android:id="@+id/product_name1"
-                                android:layout_rowSpan="3"
+                                android:layout_rowSpan="5"
                                 android:layout_columnWeight="1"
                                 android:layout_gravity="fill_vertical"
                                 android:background="@drawable/border_bottom_right_layout"
                                 android:gravity="center"
-                                android:text="DMC 금속\n(2급 준불연)"
+                                android:text="SMC 열경화성수지"
                                 android:textSize="15dp"
                                 android:padding="3dp"/>
 
@@ -279,17 +279,6 @@
                                 android:padding="3dp"/>
 
                             <TextView
-                                android:id="@+id/product_name2"
-                                android:layout_rowSpan="4"
-                                android:layout_columnWeight="1"
-                                android:layout_gravity="fill_vertical"
-                                android:background="@drawable/border_bottom_right_layout"
-                                android:gravity="center"
-                                android:text="DMC 금속\n(1급 물연)"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
                                 android:id="@+id/product_standard4"
                                 android:layout_columnWeight="1"
                                 android:background="@drawable/border_bottom_right_layout"
@@ -307,12 +296,11 @@
 
                             <TextView
                                 android:id="@+id/product_price4"
-                                android:layout_height="wrap_content"
                                 android:layout_columnWeight="1"
                                 android:background="@drawable/border_only_bottom_layout"
                                 android:gravity="center"
-                                android:padding="3dp"
-                                android:textSize="15dp" />
+                                android:textSize="15dp"
+                                android:padding="3dp"/>
 
                             <TextView
                                 android:id="@+id/product_standard5"
@@ -338,53 +326,6 @@
                                 android:textSize="15dp"
                                 android:padding="3dp"/>
 
-                            <TextView
-                                android:id="@+id/product_standard6"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
-                                android:id="@+id/product_unit6"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
-                                android:id="@+id/product_price6"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_only_bottom_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
-                                android:id="@+id/product_standard7"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
-                                android:id="@+id/product_unit7"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_bottom_right_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
-
-                            <TextView
-                                android:id="@+id/product_price7"
-                                android:layout_columnWeight="1"
-                                android:background="@drawable/border_only_bottom_layout"
-                                android:gravity="center"
-                                android:textSize="15dp"
-                                android:padding="3dp"/>
                         </GridLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -417,7 +358,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/call"
-                    android:orientation="horizontal" />
+                    android:orientation="horizont
+
+                    al" />
 
                 <LinearLayout
                     android:id="@+id/kakatab"
