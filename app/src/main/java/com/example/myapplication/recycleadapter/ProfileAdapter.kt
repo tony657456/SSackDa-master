@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.myapplication.MainActivity
+import com.example.myapplication.contents.MainActivity
 import com.example.myapplication.R
 
 class ProfileAdapter(private val context: MainActivity) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {

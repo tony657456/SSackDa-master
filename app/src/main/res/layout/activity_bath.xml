@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".contents.AlActivity">
+        tools:context=".contents.BathActivity">
 
         <include
             android:id="@+id/topBar"
@@ -28,7 +28,7 @@
 
         <include
             android:id="@+id/description"
-            layout="@layout/smc"
+            layout="@layout/bath"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="170dp"></include>
@@ -76,5 +76,6 @@
                     android:orientation="horizontal" />
             </LinearLayout>
         </com.google.android.material.bottomnavigation.BottomNavigationView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

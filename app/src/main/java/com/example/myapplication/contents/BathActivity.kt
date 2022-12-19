@@ -1,75 +1,57 @@
-package com.example.myapplication
+package com.example.myapplication.contents
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
-import com.example.myapplication.MainActivity
 import com.example.myapplication.R
-import com.example.myapplication.databinding.ActivitySmcBinding
-import com.example.myapplication.domain.DmcProduct
-import com.example.myapplication.domain.SmcProduct
+import com.example.myapplication.databinding.ActivityBathBinding
+import com.example.myapplication.domain.BathProduct
 import com.example.myapplication.dto.RetrofitBuilderDto
-import com.kakao.sdk.common.KakaoSdk
-import com.kakao.sdk.common.util.KakaoCustomTabsClient
-import com.kakao.sdk.talk.TalkApiClient
+import kotlinx.android.synthetic.main.activity_main.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SmcActivity : AppCompatActivity() {
+class BathActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivitySmcBinding
-    var smcProduct = SmcProduct();
+    private lateinit var binding: ActivityBathBinding
+    var bathProduct = BathProduct();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Kakao SDK 초기화
-        KakaoSdk.init(this, "deee36d8ab760c95e888056a58302a5d")
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_bath)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_smc)
-
-        binding.smc.setOnClickListener {
-            startActivity(Intent(this, SmcActivity::class.java))
-        }
-
-        binding.dmcMetal.setOnClickListener {
-            startActivity(Intent(this, DmcActivity::class.java))
-        }
-
-        binding.home.setOnClickListener {
+        // home
+        binding.root.home.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
-
-        // 전화 걸기 탭
-        binding.calltab.setOnClickListener {
-            val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
-            startActivity(call)
+        // dmc
+        binding.root.dmc_metal.setOnClickListener {
+            startActivity(Intent(this, DmcActivity::class.java))
         }
-        // 카카오톡 상담하기 탭
-        binding.kakatab.setOnClickListener {
-            val url = TalkApiClient.instance.channelChatUrl("_xgHcfT")
-            KakaoCustomTabsClient.openWithDefault(this, url)
+        // smc
+        binding.root.smc.setOnClickListener {
+            startActivity(Intent(this, SmcActivity::class.java))
         }
-        // 카카오톡 채널추가 하기 탭
-        binding.talktab.setOnClickListener {
-            val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("http://bz150422a.ilogin.biz/"))
-            startActivity(homepage)
+        // al
+        binding.root.al.setOnClickListener {
+            startActivity(Intent(this, AlActivity::class.java))
         }
-
-        product_data(smcProduct)
+        // bath
+        binding.root.bath.setOnClickListener {
+            startActivity(Intent(this, BathActivity::class.java))
+        }
+        product_data(bathProduct)
     }
 
-    // request를 하고 response를 받아오는 코드인데 건축자재 데이터를 List 형태로 받아오기 때문에
-    // getIdentifier라는 함수를 이용해서 아이디를 받아온 다음 각 표 셀 안에다가 건축자재 데이터를 넣어주었다.
-    fun product_data(smcProduct: SmcProduct) {
-        val call = RetrofitBuilderDto.api.getProductResponse(smcProduct)
-        call.enqueue(object : Callback<List<SmcProduct>> {
-            override fun onResponse(call: Call<List<SmcProduct>>, response: Response<List<SmcProduct>>) {
+    fun product_data(bathProduct: BathProduct) {
+        val call = RetrofitBuilderDto.api.getProductResponse(bathProduct)
+        call.enqueue(object : Callback<List<BathProduct>> {
+            override fun onResponse(call: Call<List<BathProduct>>, response: Response<List<BathProduct>>) {
                 if (response.isSuccessful()) {
                     // 아이디 30개 가져옴
                     var size = response.body()?.size
@@ -107,7 +89,7 @@ class SmcActivity : AppCompatActivity() {
                 } else Log.d("RESPONSE", "FAILSE")
             }
 
-            override fun onFailure(call: Call<List<SmcProduct>>, t: Throwable) {
+            override fun onFailure(call: Call<List<BathProduct>>, t: Throwable) {
                 Log.d("CONNECTION FAILURE: ", t.localizedMessage)
             }
         })

@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".contents.MainActivity">
 
         <!-- 상단바 -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -75,14 +75,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/s2dd"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
@@ -91,11 +83,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
                             android:layout_marginBottom="10dp"
-                            android:background="@drawable/background_radius"
+                            android:background="@drawable/blacktab"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
                             android:text="대표품목"
+                            android:textColor="@color/white"
                             android:textStyle="bold" />
 
                         <TextView
@@ -311,7 +304,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/gyptax"
+                            android:id="@+id/tax"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
@@ -320,7 +313,7 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="집텍스"
+                            android:text="텍스"
                             android:textStyle="bold" />
 
                         <TextView
@@ -352,7 +345,7 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="마이톤 T바"
+                            android:text="마이톤"
                             android:textStyle="bold" />
 
                         <TextView
@@ -1733,7 +1726,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/s2home"
+                    android:background="@drawable/s2kakao"
                     android:orientation="horizontal" />
             </LinearLayout>
         </com.google.android.material.bottomnavigation.BottomNavigationView>

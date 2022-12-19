@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.contents
 
 import android.content.Intent
 import android.net.Uri
@@ -7,12 +7,14 @@ import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.domain.RepresentProduct
 import com.example.myapplication.dto.RetrofitBuilderDto
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
 import com.kakao.sdk.talk.TalkApiClient
+import kotlinx.android.synthetic.main.activity_smc.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,19 +35,26 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        // 자기 자신 액티비티 다시 실행
+        // home
         binding.home.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
-
+        // dmc
         binding.dmcMetal.setOnClickListener {
             startActivity(Intent(this, DmcActivity::class.java))
         }
-
+        // smc
         binding.smc.setOnClickListener {
             startActivity(Intent(this, SmcActivity::class.java))
         }
-
+        // al담파
+        binding.al.setOnClickListener {
+            startActivity(Intent(this, AlActivity::class.java))
+        }
+        // bath
+        binding.bath.setOnClickListener {
+            startActivity(Intent(this, BathActivity::class.java))
+        }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
             val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
@@ -58,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         }
         // 카카오톡 채널추가 하기 탭
         binding.talktab.setOnClickListener {
-            val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("http://bz150422a.ilogin.biz/"))
+            val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("https://ssakda.co.kr/"))
             startActivity(homepage)
         }
         product_data(product)
