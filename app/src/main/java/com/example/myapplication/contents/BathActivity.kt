@@ -1,6 +1,7 @@
 package com.example.myapplication.contents
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,8 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityBathBinding
 import com.example.myapplication.domain.BathProduct
 import com.example.myapplication.dto.RetrofitBuilderDto
+import com.kakao.sdk.common.util.KakaoCustomTabsClient
+import com.kakao.sdk.talk.TalkApiClient
 import kotlinx.android.synthetic.main.activity_main.view.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -26,24 +29,60 @@ class BathActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_bath)
 
         // home
-        binding.root.home.setOnClickListener {
+        binding.home.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
         // dmc
-        binding.root.dmc_metal.setOnClickListener {
+        binding.dmcMetal.setOnClickListener {
             startActivity(Intent(this, DmcActivity::class.java))
         }
         // smc
-        binding.root.smc.setOnClickListener {
+        binding.smc.setOnClickListener {
             startActivity(Intent(this, SmcActivity::class.java))
         }
-        // al
-        binding.root.al.setOnClickListener {
+        // al담파
+        binding.al.setOnClickListener {
             startActivity(Intent(this, AlActivity::class.java))
         }
         // bath
-        binding.root.bath.setOnClickListener {
+        binding.bath.setOnClickListener {
             startActivity(Intent(this, BathActivity::class.java))
+        }
+        // span
+        binding.span.setOnClickListener {
+            startActivity(Intent(this, SpandActivity::class.java))
+        }
+        // glasswol
+        binding.glasswol.setOnClickListener {
+            startActivity(Intent(this, GlassActivity::class.java))
+        }
+        // myton
+        binding.mytont.setOnClickListener {
+            startActivity(Intent(this, MytonActivity::class.java))
+        }
+        // eboard
+        binding.eboard.setOnClickListener {
+            startActivity(Intent(this, EboardActivity::class.java))
+        }
+        // isopink
+        binding.pink.setOnClickListener {
+            startActivity(Intent(this, IsopinkActivity::class.java))
+        }
+
+        // 전화 걸기 탭
+        binding.calltab.setOnClickListener {
+            val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
+            startActivity(call)
+        }
+        // 카카오톡 상담하기 탭
+        binding.kakatab.setOnClickListener {
+            val url = TalkApiClient.instance.channelChatUrl("_xgHcfT")
+            KakaoCustomTabsClient.openWithDefault(this, url)
+        }
+        // 카카오톡 채널추가 하기 탭
+        binding.talktab.setOnClickListener {
+            val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("https://ssakda.co.kr/"))
+            startActivity(homepage)
         }
         product_data(bathProduct)
     }

@@ -8,7 +8,13 @@ class IsopinkProduct {
         set(value) {
             field = value
         }
-
+    var product_name: String? = null
+        get() {
+            return field
+        }
+        set(value) {
+            field = value
+        }
     var standard: String? = null
         get() {
             return field

@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.HorizontalScrollView
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -14,7 +16,7 @@ import com.example.myapplication.dto.RetrofitBuilderDto
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
 import com.kakao.sdk.talk.TalkApiClient
-import kotlinx.android.synthetic.main.activity_smc.view.*
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -54,6 +56,26 @@ class MainActivity : AppCompatActivity() {
         // bath
         binding.bath.setOnClickListener {
             startActivity(Intent(this, BathActivity::class.java))
+        }
+        // span
+        binding.span.setOnClickListener {
+            startActivity(Intent(this, SpandActivity::class.java))
+        }
+        // glasswol
+        binding.glasswol.setOnClickListener {
+            startActivity(Intent(this, GlassActivity::class.java))
+        }
+        // myton
+        binding.mytont.setOnClickListener {
+            startActivity(Intent(this, MytonActivity::class.java))
+        }
+        // eboard
+        binding.eboard.setOnClickListener {
+            startActivity(Intent(this, EboardActivity::class.java))
+        }
+        // isopink
+        binding.pink.setOnClickListener {
+            startActivity(Intent(this, IsopinkActivity::class.java))
         }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {

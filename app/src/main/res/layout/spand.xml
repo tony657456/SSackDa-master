@@ -82,13 +82,13 @@
 
                         <TextView
                             android:id="@+id/product_name1"
-                            android:layout_rowSpan="5"
+                            android:layout_rowSpan="2"
                             android:layout_columnWeight="1"
                             android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
-                            android:text="SMC 열경화성수지"
+                            android:text="스판드럴"
                             android:textSize="15dp" />
 
                         <TextView
@@ -139,79 +139,6 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard3"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit3"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price3"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard4"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit4"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price4"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard5"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit5"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price5"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
                     </GridLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>

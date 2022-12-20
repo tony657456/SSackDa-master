@@ -33,24 +33,44 @@ class DmcActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_dmc)
 
         // home
-        binding.root.home.setOnClickListener{
+        binding.home.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
         // dmc
-        binding.root.dmc_metal.setOnClickListener {
+        binding.dmcMetal.setOnClickListener {
             startActivity(Intent(this, DmcActivity::class.java))
         }
         // smc
-        binding.root.smc.setOnClickListener {
+        binding.smc.setOnClickListener {
             startActivity(Intent(this, SmcActivity::class.java))
         }
         // al담파
-        binding.root.al.setOnClickListener {
+        binding.al.setOnClickListener {
             startActivity(Intent(this, AlActivity::class.java))
         }
         // bath
-        binding.root.bath.setOnClickListener {
+        binding.bath.setOnClickListener {
             startActivity(Intent(this, BathActivity::class.java))
+        }
+        // span
+        binding.span.setOnClickListener {
+            startActivity(Intent(this, SpandActivity::class.java))
+        }
+        // glasswol
+        binding.glasswol.setOnClickListener {
+            startActivity(Intent(this, GlassActivity::class.java))
+        }
+        // myton
+        binding.mytont.setOnClickListener {
+            startActivity(Intent(this, MytonActivity::class.java))
+        }
+        // eboard
+        binding.eboard.setOnClickListener {
+            startActivity(Intent(this, EboardActivity::class.java))
+        }
+        // isopink
+        binding.pink.setOnClickListener {
+            startActivity(Intent(this, IsopinkActivity::class.java))
         }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
