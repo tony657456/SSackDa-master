@@ -72,6 +72,10 @@ class SmcActivity : AppCompatActivity() {
         binding.pink.setOnClickListener {
             startActivity(Intent(this, IsopinkActivity::class.java))
         }
+        // tax
+        binding.tax.setOnClickListener {
+            startActivity(Intent(this, TaxActivity::class.java))
+        }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
             val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))

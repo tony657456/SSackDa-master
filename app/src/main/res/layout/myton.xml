@@ -81,14 +81,11 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/product_name2"
-                            android:layout_rowSpan="4"
+                            android:id="@+id/product_name1"
                             android:layout_columnWeight="1"
-                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
-                            android:text="대한 강재 AL담파\n(롤 코팅)"
                             android:textSize="15dp" />
 
                         <TextView
@@ -117,7 +114,16 @@
                             android:textSize="15dp" />
 
                         <TextView
+                            android:id="@+id/product_name2"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
+
+                        <TextView
                             android:id="@+id/product_standard2"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
@@ -141,8 +147,21 @@
                             android:textSize="15dp" />
 
                         <TextView
-                            android:id="@+id/product_standard3"
+                            android:id="@+id/product_name3"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/product_standard3"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
@@ -151,6 +170,8 @@
                         <TextView
                             android:id="@+id/product_unit3"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
@@ -159,14 +180,28 @@
                         <TextView
                             android:id="@+id/product_price3"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_only_bottom_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/product_name4"
+                            android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
+                            android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
 
                         <TextView
                             android:id="@+id/product_standard4"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
@@ -175,6 +210,8 @@
                         <TextView
                             android:id="@+id/product_unit4"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
@@ -183,22 +220,19 @@
                         <TextView
                             android:id="@+id/product_price4"
                             android:layout_columnWeight="1"
+                            android:layout_rowSpan="2"
+                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_only_bottom_layout"
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
-                            android:id="@+id/product_name1"
-                            android:layout_rowSpan="4"
+                            android:id="@+id/product_name5"
                             android:layout_columnWeight="1"
-                            android:layout_gravity="fill_vertical"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
-                            android:text="대한 강재 AL담파\n(롤 코팅 외부용)"
                             android:textSize="15dp" />
-
                         <TextView
                             android:id="@+id/product_standard5"
                             android:layout_height="wrap_content"
@@ -223,15 +257,21 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
-                            android:id="@+id/product_standard6"
+                            android:id="@+id/product_name6"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
+                        <TextView
+                            android:id="@+id/product_standard6"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
                         <TextView
                             android:id="@+id/product_unit6"
                             android:layout_columnWeight="1"
@@ -239,7 +279,6 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
                             android:id="@+id/product_price6"
                             android:layout_columnWeight="1"
@@ -247,15 +286,21 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
-                            android:id="@+id/product_standard7"
+                            android:id="@+id/product_name7"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
+                        <TextView
+                            android:id="@+id/product_standard7"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
                         <TextView
                             android:id="@+id/product_unit7"
                             android:layout_columnWeight="1"
@@ -263,7 +308,6 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
                             android:id="@+id/product_price7"
                             android:layout_columnWeight="1"
@@ -271,15 +315,21 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
-                            android:id="@+id/product_standard8"
+                            android:id="@+id/product_name8"
                             android:layout_columnWeight="1"
                             android:background="@drawable/border_bottom_right_layout"
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
+                        <TextView
+                            android:id="@+id/product_standard8"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/border_bottom_right_layout"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:textSize="15dp" />
                         <TextView
                             android:id="@+id/product_unit8"
                             android:layout_columnWeight="1"
@@ -287,7 +337,6 @@
                             android:gravity="center"
                             android:padding="3dp"
                             android:textSize="15dp" />
-
                         <TextView
                             android:id="@+id/product_price8"
                             android:layout_columnWeight="1"
@@ -296,181 +345,6 @@
                             android:padding="3dp"
                             android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/product_name3"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:text="대한 강재 AL담파 캡"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard9"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit9"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price9"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_name4"
-                            android:layout_rowSpan="4"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_vertical"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:text="유창 AL"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard10"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit10"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price10"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard11"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit11"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price11"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard12"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit12"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price12"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard13"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit13"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price13"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_name14"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:text="유창 AL 캡"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_standard14"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_unit14"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_bottom_right_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:id="@+id/product_price14"
-                            android:layout_columnWeight="1"
-                            android:background="@drawable/border_only_bottom_layout"
-                            android:gravity="center"
-                            android:padding="3dp"
-                            android:textSize="15dp" />
                     </GridLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
