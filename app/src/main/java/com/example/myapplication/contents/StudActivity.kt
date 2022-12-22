@@ -10,10 +10,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.R
-import com.example.myapplication.databinding.ActivityIsopinkBinding
 import com.example.myapplication.databinding.ActivityMainBinding
-import com.example.myapplication.domain.IsopinkProduct
+import com.example.myapplication.databinding.ActivityStudBinding
 import com.example.myapplication.domain.RepresentProduct
+import com.example.myapplication.domain.StudProduct
 import com.example.myapplication.dto.RetrofitBuilderDto
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.KakaoCustomTabsClient
@@ -26,10 +26,10 @@ import retrofit2.Response
 // Spring boot랑 연결을 해서 데이터를 받아온다.
 // 카카오톡 채팅을 사용하기 위해 카카오 API를 사용하는 중인데
 // 이 부분은 카카오톡 개발자 사이트에서 문서를 보거나 구글링을 통해 해결했다.
-class IsopinkActivity : AppCompatActivity() {
+class StudActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityIsopinkBinding
-    var isopinkProduct = IsopinkProduct()
+    private lateinit var binding: ActivityStudBinding
+    var studProduct = StudProduct()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +37,7 @@ class IsopinkActivity : AppCompatActivity() {
         // Kakao SDK 초기화
         KakaoSdk.init(this, "deee36d8ab760c95e888056a58302a5d")
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_isopink)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_stud)
 
         // home
         binding.home.setOnClickListener{
@@ -134,15 +134,15 @@ class IsopinkActivity : AppCompatActivity() {
             val homepage = Intent(Intent.ACTION_VIEW, Uri.parse("https://ssakda.co.kr/"))
             startActivity(homepage)
         }
-        product_data(isopinkProduct)
+        product_data(studProduct)
     }
 
     // request를 하고 response를 받아오는 코드인데 건축자재 데이터를 List 형태로 받아오기 때문에
     // getIdentifier라는 함수를 이용해서 아이디를 받아온 다음 각 표 셀 안에다가 건축자재 데이터를 넣어주었다.
-    fun product_data(isopinkProduct: IsopinkProduct) {
-        val call = RetrofitBuilderDto.api.getProductResponse(isopinkProduct)
-        call.enqueue(object : Callback<List<IsopinkProduct>> {
-            override fun onResponse(call: Call<List<IsopinkProduct>>, response: Response<List<IsopinkProduct>>) {
+    fun product_data(studProduct: StudProduct) {
+        val call = RetrofitBuilderDto.api.getProductResponse(studProduct)
+        call.enqueue(object : Callback<List<StudProduct>> {
+            override fun onResponse(call: Call<List<StudProduct>>, response: Response<List<StudProduct>>) {
                 if (response.isSuccessful()) {
                     // 아이디 30개 가져옴
                     var size = response.body()?.size
@@ -186,7 +186,7 @@ class IsopinkActivity : AppCompatActivity() {
                 } else Log.d("RESPONSE", "FAILSE")
             }
 
-            override fun onFailure(call: Call<List<IsopinkProduct>>, t: Throwable) {
+            override fun onFailure(call: Call<List<StudProduct>>, t: Throwable) {
                 Log.d("CONNECTION FAILURE: ", t.localizedMessage)
             }
         })

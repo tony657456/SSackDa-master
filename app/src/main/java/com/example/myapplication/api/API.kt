@@ -29,5 +29,22 @@ interface API {
     fun getProductResponse(@Body spandProduct: SpandProduct) : Call<List<SpandProduct>>
     @POST("/taxp")
     fun getProductResponse(@Body taxProduct: TaxProduct) : Call<List<TaxProduct>>
-
+    @POST("/clibbarsystemp")
+    fun getProductResponse(@Body clibbarSystemProduct: ClibbarSystemProduct) : Call<List<ClibbarSystemProduct>>
+    @POST("/darukip")
+    fun getProductResponse(@Body darukiProduct: DarukiProduct) : Call<List<DarukiProduct>>
+    @POST("/gujop")
+    fun getProductResponse(@Body gujoProduct: GujoProduct) : Call<List<GujoProduct>>
+    @POST("/gypsump")
+    fun getProductResponse(@Body gypsumProduct: GypsumProduct) : Call<List<GypsumProduct>>
+    @POST("/hapanp")
+    fun getProductResponse(@Body happanProduct: HappanProduct) : Call<List<HappanProduct>>
+    @POST("/mabrsystemp")
+    fun getProductResponse(@Body mbarSystemProduct: MbarSystemProduct) : Call<List<MbarSystemProduct>>
+    @POST("/mdfp")
+    fun getProductResponse(@Body mdfProduct: MdfProduct) : Call<List<MdfProduct>>
+    @POST("/runnerp")
+    fun getProductResponse(@Body runnerProduct: RunnerProduct) : Call<List<RunnerProduct>>
+    @POST("/studp")
+    fun getProductResponse(@Body studProduct: StudProduct) : Call<List<StudProduct>>
 }

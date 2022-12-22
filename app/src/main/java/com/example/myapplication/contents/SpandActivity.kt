@@ -78,6 +78,42 @@ class SpandActivity : AppCompatActivity() {
         binding.tax.setOnClickListener {
             startActivity(Intent(this, TaxActivity::class.java))
         }
+        // clibbarsystem
+        binding.clibbar.setOnClickListener {
+            startActivity(Intent(this, ClibbarSystemActivity::class.java))
+        }
+        // daruki
+        binding.daro.setOnClickListener {
+            startActivity(Intent(this, DarukiActivity::class.java))
+        }
+        // gujo
+        binding.gujo.setOnClickListener {
+            startActivity(Intent(this, GujoActivity::class.java))
+        }
+        // gypsum
+        binding.gypsum.setOnClickListener {
+            startActivity(Intent(this, GypsumActivity::class.java))
+        }
+        // happan
+        binding.happan.setOnClickListener {
+            startActivity(Intent(this, HappanActivity::class.java))
+        }
+        // mbarsystem
+        binding.mbarsystem.setOnClickListener {
+            startActivity(Intent(this, MbarSystemActivity::class.java))
+        }
+        // mdf
+        binding.mdf.setOnClickListener {
+            startActivity(Intent(this, MdfActivity::class.java))
+        }
+        // runner
+        binding.run.setOnClickListener {
+            startActivity(Intent(this, RunnerActivity::class.java))
+        }
+        // stud
+        binding.stud.setOnClickListener {
+            startActivity(Intent(this, StudActivity::class.java))
+        }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
             val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))
