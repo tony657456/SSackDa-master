@@ -5,7 +5,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".contents.GypsumActivity">
+        tools:context=".contents.DecoActivity">
 
         <include
             layout="@layout/topbar"
@@ -65,7 +65,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/al"
+                            android:id="@+id/gypsum"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -73,8 +73,9 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="AL담파"
+                            android:text="석고 보드"
                             android:textStyle="bold" />
+
                     </LinearLayout>
 
 
@@ -84,7 +85,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/gypsum"
+                            android:id="@+id/deco"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -93,12 +94,12 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="석고 보드"
+                            android:text="데코타일"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/deco"
+                            android:id="@+id/dmc_metal"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -106,7 +107,7 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="데코타일"
+                            android:text="DMC 금속"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -149,7 +150,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/dmc_metal"
+                            android:id="@+id/al"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -158,7 +159,7 @@
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="10dp"
-                            android:text="DMC 금속"
+                            android:text="AL담파"
                             android:textStyle="bold" />
 
                         <TextView
@@ -467,7 +468,7 @@
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <include
-            layout="@layout/gypsum"
+            layout="@layout/deco"
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
