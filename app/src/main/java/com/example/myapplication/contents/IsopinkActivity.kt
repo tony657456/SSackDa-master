@@ -119,6 +119,30 @@ class IsopinkActivity : AppCompatActivity() {
         binding.stud.setOnClickListener {
             startActivity(Intent(this, StudActivity::class.java))
         }
+        // pf, wuletan
+        binding.pfwuletan.setOnClickListener {
+            startActivity(Intent(this, PfwuletanActivity::class.java))
+        }
+        // sammokrubar
+        binding.sammok.setOnClickListener {
+            startActivity(Intent(this, RubarActivity::class.java))
+        }
+        // deco
+        binding.deco.setOnClickListener {
+            startActivity(Intent(this, DecoActivity::class.java))
+        }
+        // door
+        binding.door.setOnClickListener {
+            startActivity(Intent(this, DoorActivity::class.java))
+        }
+        // jipmul
+        binding.jipmul.setOnClickListener {
+            startActivity(Intent(this, JipmulActivity::class.java))
+        }
+        // bangdek
+        binding.bangdek.setOnClickListener {
+            startActivity(Intent(this, BangdekActivity::class.java))
+        }
         // 전화 걸기 탭
         binding.calltab.setOnClickListener {
             val call = Intent(Intent.ACTION_DIAL, Uri.parse("tel:16003482"))

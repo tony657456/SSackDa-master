@@ -18,42 +18,42 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".RubarActivity"
+            android:name=".contents.RubarActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PfwuletanActivity"
+            android:name=".contents.PfwuletanActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".JipmulActivity"
+            android:name=".contents.JipmulActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DoorActivity"
+            android:name=".contents.DoorActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DecoActivity"
+            android:name=".contents.DecoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".BangdekActivity"
+            android:name=".contents.BangdekActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

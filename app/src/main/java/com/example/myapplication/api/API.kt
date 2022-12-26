@@ -47,4 +47,16 @@ interface API {
     fun getProductResponse(@Body runnerProduct: RunnerProduct) : Call<List<RunnerProduct>>
     @POST("/studp")
     fun getProductResponse(@Body studProduct: StudProduct) : Call<List<StudProduct>>
+    @POST("/bangdekp")
+    fun getProductResponse(@Body bangdekProduct: BangdekProduct) : Call<List<BangdekProduct>>
+    @POST("/decop")
+    fun getProductResponse(@Body decoProduct: DecoProduct) : Call<List<DecoProduct>>
+    @POST("/doorp")
+    fun getProductResponse(@Body doorProduct: DoorProduct) : Call<List<DoorProduct>>
+    @POST("/jipmulp")
+    fun getProductResponse(@Body jipmulProduct: JipmulProduct) : Call<List<JipmulProduct>>
+    @POST("/pfwuletanp")
+    fun getProductResponse(@Body pfwuletanProduct: PfwuletanProduct) : Call<List<PfwuletanProduct>>
+    @POST("/rubarp")
+    fun getProductResponse(@Body rubarProduct: RubarProduct) : Call<List<RubarProduct>>
 }
